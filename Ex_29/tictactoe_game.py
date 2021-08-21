@@ -135,7 +135,7 @@ if __name__ == "__main__":
             print("Draws: ",wins[0])
             if checkContinuePlaying() :
                 game = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
-                player = 2
+                printBoard(game)
             else:
                 break
         if checkEmptyCell(game) == False:
@@ -146,7 +146,7 @@ if __name__ == "__main__":
             print("Draws: ",wins[0])
             if checkContinuePlaying() :
                 game = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
-                player = 2
+                printBoard(game)
             else:
                 break
         player = player ^ 0x3
